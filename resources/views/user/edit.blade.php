@@ -72,7 +72,7 @@
                         <div class="col-md-12 col-sm-12 col-xs-12">
                             <a href="{{ url()->previous() }}" class="btn btn-primary" >Cancel</a>
                             <input type="submit" name="addcustomerdata" value="Update" class="btn btn-success">
-                        </div>
+                        </div> 
                     </div>
                 </div>
             </div>
