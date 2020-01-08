@@ -1,9 +1,8 @@
 ## Install Project Steps
 
-Install Project Steps
 Clone the project repository by running the command below
 ```bash
-git clone https://github.com/chintanvadi/laravel-admin.git
+https://github.com/chintanvadi/laravel-admin.git
 ```
 After cloning,run:
 
@@ -12,18 +11,17 @@ composer install
 ```
 
 Duplicate `.env.example` and rename it `.env`
+```bash
+We need to set below details in .env file
+- MAIL_DRIVER=log
+- FILESYSTEM_DRIVER=public
+```
 
 Then run:
 
 ```bash
 php artisan key:generate
 ```
-
-storage link
-```bash
-php artisan storage:link
-```
- 
 #### Database Migrations
 
 Be sure to fill in your database details in your `.env` file before running the migrations:
@@ -32,7 +30,12 @@ Be sure to fill in your database details in your `.env` file before running the 
 php artisan migrate
 ```
 
-Generate Dummy Users:
+Storage link
+```
+php artisan storage:link
+```
+
+Seed data:
 ```
 php artisan db:seed
 ```
